@@ -1,0 +1,12 @@
+dist/*
+*.hi
+*.o
+Tests
+report.html
+dist-ghc/*
+build-*-stamp
+debian/files
+debian/hlibrary.setup
+debian/libghc*
+debian/tmp*
+debian/dh_*

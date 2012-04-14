@@ -1,0 +1,2 @@
+"System.Posix.IO" has very low-level bindings to POSIX fcntl
+advisory locks.  This module wraps them in a cleaner API.
