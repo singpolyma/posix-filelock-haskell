@@ -1,0 +1,64 @@
+Source: haskell-posix-filelock
+Priority: extra
+Section: haskell
+Maintainer: Stephen Paul Weber <singpolyma@singpolyma.net>
+Build-Depends: debhelper (>= 7.0),
+               haskell-devscripts (>= 0.8),
+               cdbs,
+               ghc,
+               ghc-prof,
+               libghc-transformers-dev,
+               libghc-transformers-prof
+Build-Depends-Indep: ghc-doc,
+                     libghc-transformers-doc
+Standards-Version: 3.9.1
+Homepage: https://github.com/singpolyma/posix-filelock-haskell
+
+Package: libghc-posix-filelock-dev
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${haskell:Depends},
+         ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: Nice wrapper around POSIX fcntl advisory locks
+ "System.Posix.IO" has very low-level bindings to POSIX fcntl
+ advisory locks.  This module wraps them in a cleaner API.
+ .
+  Author: Stephen Paul Weber <singpolyma@singpolyma.net>
+  Upstream-Maintainer: Stephen Paul Weber <singpolyma@singpolyma.net>
+ .
+ This package contains the normal library files.
+
+Package: libghc-posix-filelock-prof
+Architecture: any
+Depends: ${haskell:Depends},
+         ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: Nice wrapper around POSIX fcntl advisory locks
+ "System.Posix.IO" has very low-level bindings to POSIX fcntl
+ advisory locks.  This module wraps them in a cleaner API.
+ .
+  Author: Stephen Paul Weber <singpolyma@singpolyma.net>
+  Upstream-Maintainer: Stephen Paul Weber <singpolyma@singpolyma.net>
+ .
+ This package contains the libraries compiled with profiling enabled.
+
+Package: libghc-posix-filelock-doc
+Architecture: all
+Section: doc
+Depends: ${haskell:Depends},
+         ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Description: Nice wrapper around POSIX fcntl advisory locks
+ "System.Posix.IO" has very low-level bindings to POSIX fcntl
+ advisory locks.  This module wraps them in a cleaner API.
+ .
+  Author: Stephen Paul Weber <singpolyma@singpolyma.net>
+  Upstream-Maintainer: Stephen Paul Weber <singpolyma@singpolyma.net>
+ .
+ This package contains the documentation files.
